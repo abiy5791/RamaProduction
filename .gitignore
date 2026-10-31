@@ -1,0 +1,7 @@
+# Vercel's local link folder (created by the Vercel command-line tool)
+.vercel/
+
+# System files Windows and macOS create on their own
+Thumbs.db
+desktop.ini
+.DS_Store
