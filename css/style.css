@@ -303,7 +303,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .hero__slide { opacity: 0; transition: opacity 1.6s ease; }
 .hero__slide.is-active { opacity: 1; }
-.hero__slide img { object-fit: cover; object-position: 50% 30%; }
+/* Phones use the tall crops; keep their top edge so faces sit clear of the menu bar */
+.hero__slide img { object-fit: cover; object-position: 50% 0%; }
 .js .hero__slide.is-active img,
 .js .hero__slide.is-leaving img { animation: settle 8s var(--ease) both; }
 
@@ -421,6 +422,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
     z-index: 0;
     min-height: 0;
   }
+  .hero__slide img { object-position: 50% 30%; }
   .hero__shade {
     background:
       linear-gradient(to top, rgba(26, 10, 13, .97) 0%, rgba(26, 10, 13, .82) 26%, rgba(26, 10, 13, .25) 60%, rgba(26, 10, 13, .45) 100%),
